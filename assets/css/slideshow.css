@@ -1,0 +1,22 @@
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  transition: opacity 1s; /* Añade una transición de 1 segundo para suavizar el cambio de opacidad */
+
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  transition: opacity 1s; /* Añade una transición de 1 segundo para suavizar el cambio de opacidad */
+}
+
+img {
+  transition: opacity 1s; /* Añade una transición de 1 segundo para suavizar el cambio de opacidad */
+
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover; /* Para asegurar que la imagen ocupe todo el espacio disponible */
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ibaj - Web</title>
+    <!--link rel="stylesheet" href="./assets/css/bootstrap.min.css" /-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="hidden" id="menu-value" class="false" />
+      <div class="header" id="header">
+        <label for="menu" class="menu">
+          <img src="./assets/images/menu.png" />
+        </label>
+        <h2 class="titulo">IBPR</h2>
+        <input type="checkbox" name="menu" id="menu" />
+      </div>
+
+      <div class="main" id="main">
+        <label for="menu" class="menu">X</label>
+        <ul>
+          <li href="#">Home</li>
+          <li href="./views/about.html">Nosotros</li>
+          <li href="./views/activities.html">Actividades</li>
+          <li href="./views/counseling.html">Consejería</li>
+          <li href="./views/prayer.html">Motivos de Oración</li>
+          <li href="./views/blog.html">Blog</li>
+          <li>Radio</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="./assets/images/slideshow/image_1.jpg" alt="Imagen 1" />
+        </div>
+        <div class="slide">
+          <img src="./assets/images/slideshow/image_2.jpg" alt="Imagen 2" />
+        </div>
+        <div class="slide">
+          <img src="./assets/images/slideshow/image_3.jpg" alt="Imagen 3" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <!--script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/popper.min.js"></script*-->
+  <script src="./apps/menu.js"></script>
+  <script src="./apps/slideshow.js"></script>
+</html>
