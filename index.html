@@ -1,52 +1,553 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es">
   <head>
+    <!-- Basic -->
     <meta charset="utf-8" />
-    <title>Ibaj - Web</title>
-    <!--link rel="stylesheet" href="./assets/css/bootstrap.min.css" /-->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/cruz.ico" type="image/x-icon" />
+
+    <title>IBPR</title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!--owl slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- nice select  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+      integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+      crossorigin="anonymous"
+    />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
   </head>
+
   <body>
-    <div class="container">
-      <input type="hidden" id="menu-value" class="false" />
-      <div class="header" id="header">
-        <label for="menu" class="menu">
-          <img src="./assets/images/menu.png" />
-        </label>
-        <h2 class="titulo">IBPR</h2>
-        <input type="checkbox" name="menu" id="menu" />
+    <div class="hero_area">
+      <div class="bg-box">
+        <img src="images/slideshow/image_2.jpg" alt="" />
       </div>
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span> IBPR </span>
+            </a>
 
-      <div class="main" id="main">
-        <label for="menu" class="menu">X</label>
-        <ul>
-          <li href="#">Home</li>
-          <li href="./views/about.html">Nosotros</li>
-          <li href="./views/activities.html">Actividades</li>
-          <li href="./views/counseling.html">Consejería</li>
-          <li href="./views/prayer.html">Motivos de Oración</li>
-          <li href="./views/blog.html">Blog</li>
-          <li>Radio</li>
-        </ul>
-      </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"
+                    >Inicio <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="actividades.html">Actividades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="motivo_oracion.html">Motivos de Oracion</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
+      <!-- slider section -->
+      <section class="slider_section">
+        <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7 col-lg-6">
+                    <div class="detail-box">
+                      <h1>
+                        "Ustedes son mis Amigos, si hacen lo que les mando"
+                      </h1>
+                      <p>Juan 15:14</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7 col-lg-6">
+                    <div class="detail-box">
+                      <h1>
+                        "Vengan a mí todos los que están cansados y llevan
+                        cargas pesadas, y yo les daré descanso."
+                      </h1>
+                      <p>Mateo 11:28</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7 col-lg-6">
+                    <div class="detail-box">
+                      <h1>
+                        "Clama a mí, y yo te responderé, y te enseñaré cosas
+                        grandes y ocultas que tú no conoces."
+                      </h1>
+                      <p>Jeremias 33:3</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <ol class="carousel-indicators">
+              <li
+                data-target="#customCarousel1"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#customCarousel1" data-slide-to="1"></li>
+              <li data-target="#customCarousel1" data-slide-to="2"></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- end slider section -->
     </div>
 
-    <div class="container">
-      <div class="slideshow-container">
-        <div class="slide">
-          <img src="./assets/images/slideshow/image_1.jpg" alt="Imagen 1" />
-        </div>
-        <div class="slide">
-          <img src="./assets/images/slideshow/image_2.jpg" alt="Imagen 2" />
-        </div>
-        <div class="slide">
-          <img src="./assets/images/slideshow/image_3.jpg" alt="Imagen 3" />
+    <!-- offer section -->
+
+    <section class="offer_section layout_padding-bottom">
+      <div class="offer_container">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/activities/act_1.jpg" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>Festejo día de la juventud</h5>
+                  <h6><span>21</span> Septiembre</h6>
+                  <div>
+                    <a class="btn btn-warning" href="">ver detalles</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="box">
+                <div class="img-box">
+                  <img src="images/activities/act_3.jpg" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>Festejo Dia del Pastor</h5>
+                  <h6><span>15</span>Noviembre</h6>
+                  <div>
+                    <a class="btn btn-warning" href="">ver detalles</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- end offer section -->
+
+    <!-- articles section -->
+
+    <section class="food_section layout_padding-bottom">
+      <div class="filters-content">
+        <div class="row grid">
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/articles/image_1.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>La cruz de Cristo</h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo,
+                    quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div>
+                    <a class="btn btn-warning" href=""> leer mas </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/articles/image_2.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>¡Atención hormigas!</h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo,
+                    quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div>
+                    <a class="btn btn-warning" href=""> leer mas </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pizza">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/articles/image_3.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>El cuerpo de Cristo</h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo,
+                    quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div>
+                    <a class="btn btn-warning" href=""> leer mas </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/articles/image_4.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>Redimiento el tiempo</h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo,
+                    quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div>
+                    <a class="btn btn-warning" href=""> leer mas </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all burger">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/articles/image_5.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>El Espíritu Santo</h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo,
+                    quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div>
+                    <a class="btn btn-warning" href=""> leer mas </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 all pasta">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="images/articles/image_6.png" alt="" />
+                </div>
+                <div class="detail-box">
+                  <h5>La verdadera Navidad</h5>
+                  <p>
+                    Veniam debitis quaerat officiis quasi cupiditate quo,
+                    quisquam velit, magnam voluptatem repellendus sed eaque
+                  </p>
+                  <div>
+                    <a class="btn btn-warning" href=""> leer mas </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href=""> Ver mas </a>
+      </div>
+    </section>
+
+    <!-- end food section -->
+
+    <!-- about section -->
+
+    <section class="about_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="images/faith.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="detail-box">
+              <div class="heading_container">
+                <h2>Dios es amor</h2>
+              </div>
+              <p>
+                Porque de tal manera amó Dios al mundo, que ha dado a su Hijo
+                unigénito, para que todo aquel que en él cree, no se pierda, mas
+                tenga vida eterna. <br />
+                <cite>Juan 3:16</cite>
+              </p>
+              <a href=""> Conocer mas </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end about section -->
+
+    <!-- book section -->
+    <section class="book_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>¿Necesita ayuda?</h2>
+          <h4>No dude en contactarnos</h4>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form_container">
+              <form action="">
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Nombre"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Numero de Telefono"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Email"
+                  />
+                </div>
+                <!--div>
+                  <select class="form-control nice-select wide">
+                    <option value="" disabled selected>
+                      How many persons?
+                    </option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                  </select>
+                </div-->
+                <div>
+                  <textarea
+                    name=""
+                    class="form-control"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="¿Como podemos ayudarle?"
+                  ></textarea>
+                </div>
+                <div class="btn_box">
+                  <button>Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="map_container">
+              <div id="googleMap"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end book section -->
+
+    <!-- client section -->
+
+    <section class="client_section layout_padding-bottom">
+      <div class="container">
+        <div class="heading_container heading_center psudo_white_primary mb_45">
+          <h2>Testimonios</h2>
+        </div>
+        <div class="carousel-wrap row">
+          <div class="owl-carousel client_owl-carousel">
+            <div class="item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    "Seguir a Cristo es lo mejor que me paso en mi vida, jamas pense que cambiaria de tal forma que muchos ya ni me reconocen, pude terminar mi facultad.."
+                  </p>
+                  <h6>Moana Michell</h6>
+                </div>
+                <div class="img-box">
+                  <img src="images/testimonies/member_1.jpg" alt="" class="box-img" />
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="box">
+                <div class="detail-box">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam
+                  </p>
+                  <h6>Mike Hamell</h6>
+                </div>
+                <div class="img-box">
+                  <img src="images/testimonies/member_2.jpg" alt="" class="box-img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end client section -->
+
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <div class="footer_contact">
+              <h4>Contáctenos</h4>
+              <div class="contact_link_box">
+                <a
+                  href="https://maps.app.goo.gl/iJDfNvNmvxkU8UZZ7"
+                  target="_blank"
+                >
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span> Ubicacion </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span> 021 527 168 </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span> ibpr_mc@gmail.com </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 footer-col">
+            <div class="footer_detail">
+              <a href="" class="footer-logo"> IBPR </a>
+              <p>Iglesia Evangélica Bautista Panambi Retá</p>
+              <div class="footer_social">
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="">
+                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 footer-col">
+            <h4>Horario Servicios</h4>
+            <p>Culto Principal - Domingo 10:00 hs</p>
+            <p>Culto Horación - Miércoles 19:30 hs</p>
+          </div>
+        </div>
+        <div class="footer-info">
+          <p>
+            &copy; <span id="displayYear"></span> Todos los derechos reservados
+            <a href="https://github.com">MC - IBPR</a><br /><br />
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer section -->
+
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
   </body>
-  <!--script src="./assets/js/bootstrap.min.js"></script>
-  <script src="./assets/js/popper.min.js"></script*-->
-  <script src="./apps/menu.js"></script>
-  <script src="./apps/slideshow.js"></script>
 </html>
