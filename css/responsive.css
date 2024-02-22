@@ -78,7 +78,9 @@ padding-left: 0;
 
 @media (max-width: 376px) {
   .slider_section .detail-box h1 {
-    font-size: 3rem;
+    width: 80%;
+    font-size: 1.5rem;
+
   }
 }
 
