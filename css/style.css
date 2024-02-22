@@ -10,6 +10,10 @@ body {
   padding: 90px 0;
 }
 
+.subtile {
+  font-size: 18px;;
+}
+
 .layout_padding2 {
   padding: 75px 0;
 }
@@ -32,7 +36,7 @@ body {
 
 h1,
 h2 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Georgia', cursive;
 }
 
 .heading_container {
@@ -51,7 +55,7 @@ h2 {
 .heading_container h2 {
   position: relative;
   margin-bottom: 0;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
@@ -148,7 +152,7 @@ a:focus {
 }
 
 .navbar-brand {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Georgia', cursive;
 }
 
 .navbar-brand span {
@@ -342,7 +346,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 15px;
 }
@@ -435,13 +439,13 @@ a:focus {
 }
 
 .offer_section .box .detail-box h5 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 24px;
+  font-family: 'Georgia', cursive;
+  font-size: 19px;
   margin: 0;
 }
 
 .offer_section .box .detail-box h6 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Georgia', cursive;
   margin: 10px 0;
 }
 
@@ -914,7 +918,7 @@ a:focus {
 .footer_section .footer-logo {
   font-weight: 600;
   margin-bottom: 20px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Georgia', cursive;
 }
 
 .footer_section p {
@@ -951,7 +955,7 @@ a:focus {
 .footer_section .footer-logo {
   display: block;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 34px;
   line-height: 1;
   color: #ffffff;
 }
